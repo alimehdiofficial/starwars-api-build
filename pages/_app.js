@@ -79,7 +79,7 @@ const AppLoadingContents = styled.div`
   > img {
     object-fit: contain;
     height: 150px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     filter: brightness(0) invert(1);
   }
 `;
