@@ -16,7 +16,6 @@ function CharacterCard({ character }) {
     <>
       <Head>
         <title>{character?.name} | StarWars.com</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <CardContainer>
         <img src={character?.image} alt="" />

@@ -11,6 +11,7 @@ function Character({ character }) {
   );
 }
 
+// EXECUTED ON SERVER
 export async function getStaticProps(context) {
   const character = await fetch(
     `https://akabab.github.io/starwars-api/api/id/${context.params.id}`

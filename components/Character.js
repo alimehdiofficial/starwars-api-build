@@ -1,23 +1,13 @@
 import styled from "styled-components";
 import Link from "next/link";
+import Image from "next/image";
 
 function Character({ character }) {
   return (
     <CharacterContainer>
       <Link href={`/id/${character.id}.json`}>
         <a>
-          <img
-            src={
-              character.id === 28
-                ? (character.image =
-                    "https://static.wikia.nocookie.net/starwars/images/d/d9/MonMothma2.jpg/revision/latest/scale-to-width-down/340?cb=20070615223341")
-                : character.id === 77
-                ? (character.image =
-                    "https://static.wikia.nocookie.net/swfanon/images/8/8a/3429_plageuis.jpg/revision/latest/top-crop/width/360/height/450?cb=20110308151336")
-                : character.image
-            }
-            alt={character.name}
-          />
+          <img src={character.image} alt={character.name} />
         </a>
       </Link>
       <Link href={`/id/${character.id}.json`}>
